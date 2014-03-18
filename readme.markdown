@@ -1,6 +1,6 @@
-# Managed.Commons.Helix #
+# Commons.Crypto.Phelix #
 
-Open source implementation of a Phelix Cipher/MAC, as per [Phelix - Fast Encryption and Authentication in a Single Cryptographic Primitive](https://www.schneier.com/paper-phelix.html)
+Open source managed implementation of a Phelix Cipher/MAC, as per [Phelix - Fast Encryption and Authentication in a Single Cryptographic Primitive](https://www.schneier.com/paper-phelix.html)
 
 
 
