@@ -8,8 +8,8 @@
     <ProjectGuid>{EC7A8F91-26B1-4C56-9A3E-F2399B03C0B4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Managed.Commons.Helix</RootNamespace>
-    <AssemblyName>Managed.Commons.Helix</AssemblyName>
+    <RootNamespace>Commons.Crypto</RootNamespace>
+    <AssemblyName>Managed.Commons.Phelix</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,9 +40,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Helix.cs" />
+    <Compile Include="Commons.Crypto\EncryptedWithTag.cs" />
+    <Compile Include="Commons.Crypto.Ciphers\Phelix.cs" />
+    <Compile Include="Commons.Crypto\Nonce.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="readme.markdown" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
