@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Commons.Crypto.Phelix", "Commons.Crypto.Phelix.csproj", "{EC7A8F91-26B1-4C56-9A3E-F2399B03C0B4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Commons.Crypto.Phelix", "src\Commons.Crypto.Phelix.csproj", "{EC7A8F91-26B1-4C56-9A3E-F2399B03C0B4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unit.Commons.Crypto.Phelix", "test\Unit.Commons.Crypto.Phelix\Unit.Commons.Crypto.Phelix.csproj", "{C9D538F1-E3B8-412E-BDCD-699AF2E639C1}"
 EndProject
