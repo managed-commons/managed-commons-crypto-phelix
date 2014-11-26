@@ -6,4 +6,4 @@ obj/
 test-results/
 TestResult.xml
 *.VisualState.xml
-
+/packages/
