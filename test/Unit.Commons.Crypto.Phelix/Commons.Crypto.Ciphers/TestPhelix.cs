@@ -80,7 +80,7 @@ namespace Unit.Commons.Crypto.Ciphers
 			Assert.NotNull(mac2);
 			Assert.AreEqual(Phelix.MAC_SIZE / 8, mac2.Length, "MAC Length");
 			Assert.That(plaintext, Is.EqualTo(NicePlaintext));
-			Assert.That(mac, Is.EquivalentTo(mac2));
+			Assert.That(mac, Is.EqualTo(mac2));
 		}
 
 	}
