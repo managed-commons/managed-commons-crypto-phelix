@@ -3,7 +3,6 @@
 Open source managed implementation of a Phelix Cipher/MAC, as per [Phelix - Fast Encryption and Authentication in a Single Cryptographic Primitive](https://www.schneier.com/paper-phelix.html)
 
 
-
 # License: BSD #
 
 Copyright © 2014 Managed Commons Team

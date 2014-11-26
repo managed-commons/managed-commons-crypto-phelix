@@ -25,31 +25,40 @@ namespace Commons.Crypto.Ciphers
 
 		public byte[] Encrypt(byte[] plaintext, byte[] nonce, out byte[] mac)
 		{
+			ConstrainText(plaintext);
 			ConstrainNonce(nonce);
 			mac = new byte[MAC_SIZE / 8];
-			return plaintext;
+			return plaintext.Reverse().ToArray();
 		}
 
 		public byte[] Encrypt(byte[] plaintext, byte[] nonce, int headersLength, out byte[] mac)
 		{
+			ConstrainText(plaintext);
 			ConstrainNonce(nonce);
 			mac = new byte[MAC_SIZE / 8];
-			return plaintext;
+			return plaintext.Reverse().ToArray();
 		}
 
 		public byte[] Decrypt(byte[] ciphertext, byte[] nonce, out byte[] mac)
 		{
+			ConstrainText(ciphertext, name: "ciphertext");
 			ConstrainNonce(nonce);
 			mac = new byte[MAC_SIZE / 8];
-			return ciphertext;
+			return ciphertext.Reverse().ToArray();
 		}
 
 		private static void ConstrainNonce(byte[] nonce)
 		{
 			if (nonce == null)
 				throw new ArgumentNullException("nonce");
-			if (nonce.Length != (KEY_SIZE / 8))
+			if (nonce.Length != (NONCE_SIZE / 8))
 				throw new ArgumentException("The nonce MUST have " + NONCE_SIZE + " bits!", "nonce");
+		}
+
+		private static void ConstrainText(byte[] text, string name = "plaintext")
+		{
+			if (text == null)
+				throw new ArgumentNullException(name);
 		}
 
 	}
